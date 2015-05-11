@@ -1,0 +1,849 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+
+    <title>LNV</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/gm-common.css" rel="stylesheet">
+     <link href="css/gm-reponsive-common.css" rel="stylesheet">
+    <link href="css/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+    <link href="css/gm-search-car.css" rel="stylesheet">
+<!--
+    <link href="css/custom-style.css" rel="stylesheet">
+     <link href="css/theme-style.min.css" rel="stylesheet">
+-->
+    
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+   
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body >
+      <ul class="share-btn-wrp">
+        <li class="facebook button-wrap">Facebook</li>
+        <li class="twitter button-wrap">Tweet</li>
+
+    </ul>
+      
+  <header id="header" >
+      <div class="container">
+      <div id="header-hotline" class="col-lg-2 col-md-2 col-sm-4 col-xs-12 nopadding">
+                <p>HOTLINE:<label class="phone-hotline">08 3697 8895</label></p>
+     </div>
+      <div id="header-login" class="col-lg-7 col-md-7 col-sm-4 col-xs-12">
+      
+        <div id="loginbox">
+                    <div id="header-login-box">
+                        <form id="login-form" data-target="main" action="index.html" method="GET" class="navbar-form navbar-left" autocomplete="off">
+                            <input type="text" name="username" id="username" class="login-input"/>
+                            <input type="password" name="password" id="password" class="login-input" />
+                            <input type="submit" value="Login" class="login-submit" />
+                            <input type="button" value="Register" class="login-submit" onclick="location.href='register.html'"/>
+                        </form>
+                        <div id="login-dialog">
+                            <input type="submit" value="Login" class="login-submit"/>
+                            <input type="button" value="Register" class="login-submit" onclick="location.href='register.html'"/>
+                        </div>
+                      
+                    </div>
+                </div>
+      </div>
+      <div id="header-change-language" class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+            <div class="div-change-language">
+            CHANGE LANGUAGE:
+            <div class="btn-group language-menu btn-change-language">
+                  <!--language menu-->
+                  <a href="#en" class="btn btn-link dropdown-toggle" data-toggle="dropdown" ><span class="flag-icon flag-icon-vn" id="id-current-language" data-flag="flag-icon-vn"></span></a>
+                  <ul class="dropdown-menu dropdown-menu-mini dropdown-menu-primary ul-change-language">
+                    <li data-flag="flag-icon-vn" >
+                       &nbsp<span class="flag-icon flag-icon-vn"></span> Vietnamese
+                    </li>
+                    <li  data-flag="flag-icon-gb">
+                       &nbsp<span class="flag-icon flag-icon-gb"></span> English
+                    </li>
+                    <li  data-flag="flag-icon-jp">
+                       &nbsp<span class="flag-icon flag-icon-jp"></span> Japanese
+                    </li>
+                   
+                  </ul>
+                </div>
+        </div>
+      </div>
+          </div>
+  </header>
+  <div id="header-menu" class="container">
+    <div id="logo">
+        <p><a href="index.html"><img src="images/logo_lnv.png" /></a></p>
+        <span id="menu"><img src="images/icon/icon_menu_1.png"></span>
+    </div>
+    
+    <ul id="nav">
+        <li id="homeBtn"><a href="index.php"><span id="homeBtnImg"></span></a></li>
+        <li  ><a href="#" class="active">FIND A CAR</a>
+             <ul>
+            <li><a href="searchallcar.html">All cars</a></li>
+            <li><a href="searchnewcarupdate.html">New cars update</a></li>
+            <li><a href="searchdetailcar.html">Detail cars</a></li>
+            </ul>
+
+        </li>		
+        </li>
+       <!-- <li><a href="listauction.html">AUCTION</a></li>-->
+        <li><a href="comingsoon_finance.html">FINANCE</a></li>
+        <li><a href="comingsoon_pawn.html">PAWN</a></li>
+        <li><a href="comingsoon_waranty_service.html">WARANTY SERVICE</a></li>
+        <li><a href="comingsoon_advice.html">ADVICE</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+    </ul>
+</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 pull-right page-link">
+                <div id="crumb">
+                <ul >
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                         <a href="searchallcar.html">Find a car</a>
+                    </li>
+                   <li>
+                        Detail car
+                    </li>
+                    
+                </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+    
+    <div class="content">
+        
+        <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 nopadding">
+            <div class="left-content">
+               <div class="row search-center">
+                    <div class="col-md-12">
+                        <h3>FIND BY CAR...</h3>
+                        <div class="col-md-12">
+                         <form method="get" action="searchdetailcar.html">
+                             <div class="form-group">
+						      <label for="InputName">MAKE</label>
+						          <div class="input-group col-md-12 col-xs-12">
+                                      <select>
+                                         <option value="-1" selected>All make</option>
+                                        <option value="1" >Acura</option>
+                                          <option value="2" >Alfa Romeo</option>
+                                          <option value="3" >Audi</option>
+                                          <option value="4" >Bentley</option>
+                                          <option value="5" >BMW</option>
+                                          <option value="6" >Buick</option>
+                                          <option value="7" >BYD</option>
+                                          <option value="8" >Cadillac</option>
+                                          <option value="9" >Chery</option>
+                                          <option value="10" >Chevrolet</option>
+                                          <option value="11" >Chrysler</option> 
+                                      </select>
+<!--                                      <div class="arrow-select">&#9660;</div>-->
+                                 </div>
+                              <label for="InputName">MODEL</label>
+						          <div class="input-group col-md-12 col-xs-12">
+                                      <select>
+                                         <option value="-1" selected>All model</option>
+                                         <option value="1" >TL</option>
+                                          <option value="2" >ILX</option>
+                                          <option value="3" >Intergra</option>
+                                          <option value="4" >MDX</option>
+                                          <option value="5" >RDX</option>
+                                          <option value="6" >RL</option>
+                                          <option value="7" >ZDX</option>
+                                      </select>
+<!--                                      <div class="overlay-arrow">&#9660;</div>-->
+                                 </div>
+                                 <label for="InputName">MPG</label>
+						          <div class="input-group col-md-12 col-xs-12">
+                                      <select>
+                                         <option value="-1" selected>All mpg</option>
+                                         <option value="-1" >20/29</option>  
+                                      </select>
+<!--                                      <div class="overlay-arrow">&#9660;</div>-->
+                                 </div>
+                                 <label for="InputName">TYPE</label>
+						          <div class="input-group col-md-12 col-xs-12">
+                                      <select>
+                                         <option value="-1" selected>All type</option>
+                                         <option value="-1" >AWD/ 4WD</option>  
+                                      </select>
+<!--                                      <div class="overlay-arrow">&#9660;</div>-->
+                                 </div>
+                                <label for="InputName">YEAR</label>
+						          <div class="input-group col-md-12 col-xs-12">
+                                      <select>
+                                         <option value="-1" selected>2015</option>
+                                          <option value="-1" >2014</option>  
+                                           <option value="-1" >2013</option>  
+                                           <option value="-1" >2012</option>  
+                                           <option value="-1" >2011</option>  
+                                           <option value="-1" >2010</option>  
+                                           <option value="-1" >2009</option>  
+                                           <option value="-1" >2008</option>  
+                                           <option value="-1" >2007</option>  
+                                           <option value="-1" >2006</option>  
+                                           <option value="-1" >2005</option>  
+                                           <option value="-1" >2004</option>  
+                                           <option value="-1" >2003</option>
+                                          <option value="-1" >2002</option> 
+                                          <option value="-1" >2001</option> 
+                                          <option value="-1" >2000</option> 
+                                          <option value="-1" >1999</option>  
+                                      </select>
+                                 </div>
+                                 <label for="InputName">FEATURES</label>
+						          <div class="input-group col-md-12 col-xs-12">
+                                      <select>
+                                         <option value="-1" selected>All features</option>
+                                         <option value="-1" >Acura</option>  
+                                      </select>
+<!--                                      <div class="overlay-arrow">&#9660;</div>-->
+                                 </div>
+                                 <label for="InputName">MILES</label>
+						          <div class="input-group col-md-12 col-xs-12">
+                                      <select>
+                                         <option value="-1" selected>47K</option>
+                                         <option value="-1" >80K</option>  
+                                      </select>
+<!--                                      <div class="overlay-arrow">&#9660;</div>-->
+                                 </div>
+                                 <label for="InputName">PRICE</label>
+						          <div class="input-group col-md-12 col-xs-12">
+                                      <select class="search-price small-select">
+                                          <option value="-1" selected>Lowest</option>
+                                         <option value="-1" >200.000.000 vnđ</option>
+                                          <option value="-1" >300.000.000 vnđ</option>
+                                           <option value="-1" >400.000.000 vnđ</option>
+                                           <option value="-1" >500.000.000 vnđ</option>
+                                           <option value="-1" >600.000.000 vnđ</option>
+                                           <option value="-1" >700.000.000 vnđ</option>
+                                           <option value="-1" >800.000.000 vnđ</option>
+                                           <option value="-1" >900.000.000 vnđ</option>
+                                           <option value="-1" >1.000.000.000 vnđ</option>
+                                           <option value="-1" >1.500.000.000 vnđ</option>
+                                           <option value="-1" >2.000.000.000 vnđ</option>
+                                           <option value="-1" >3.000.000.000 vnđ</option>  
+                                      </select>
+                                      <p></p>
+                                      <select class="search-price small-select">
+                                         <option value="-1" selected>Highest</option>
+                                        <option value="-1" >200.000.000 vnđ</option>
+                                          <option value="-1" >300.000.000 vnđ</option>
+                                           <option value="-1" >400.000.000 vnđ</option>
+                                           <option value="-1" >500.000.000 vnđ</option>
+                                           <option value="-1" >600.000.000 vnđ</option>
+                                           <option value="-1" >700.000.000 vnđ</option>
+                                           <option value="-1" >800.000.000 vnđ</option>
+                                           <option value="-1" >900.000.000 vnđ</option>
+                                           <option value="-1" >1.000.000.000 vnđ</option>
+                                           <option value="-1" >1.500.000.000 vnđ</option>
+                                           <option value="-1" >2.000.000.000 vnđ</option>
+                                           <option value="-1" >3.000.000.000 vnđ</option>  
+                                      </select>
+                                      
+                                 </div>
+                                 
+                                 <label for="InputName">LOCATION</label>
+						          <div class="input-group col-md-12 col-xs-12">
+                                      <select>
+                                          <option value="-1" selected>Hà Nội</option>
+                                          <option value="-1" >Hồ Chí Minh</option>
+                                          <option value="-1" >Đã Nẵng</option>
+                                          <option value="-1" >Hải Phòng</option>
+                                          <option value="-1" >Vũng Tàu</option>
+                                          <option value="-1" >Cần Thơ</option>
+                                          <option value="-1" >Bình Dương</option>
+                                          <option value="-1" >Bắc Cạn</option>
+                                          <option value="-1" >Bắc Giang</option>
+                                          <option value="-1" >Bắc Ninh</option>
+                                      </select>
+                                 </div>
+                                  <div class="input-group col-md-12 col-xs-12 submit-other-search">
+                                      <input type="submit" value="Search" />
+                                 </div>
+<!--
+                                 <div class="input-group col-md-12 col-xs-12 submit-other-search">
+                                     <a href="#">More search options</a>
+                                 </div>
+                                 <div class="input-group col-md-12 col-xs-12 submit-other-search">
+                                    <input type="button" class="btn-bb-mpg" value="BROWSER BY MPG"/>
+                                 </div>
+                                 <div class="input-group col-md-12 col-xs-12 submit-other-search">
+                                    <input type="button" class="btn-bb-style" value="BROWSER BY STYLE"/>
+                                 </div>
+-->
+                             </div>
+                         </form>
+                        </div>
+                    </div>
+                   
+                    
+                   
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+            <!--row 1 item car-->
+            <div class="row row-item-car">
+                <div class="col-lg-8 col-sm-8 col-md-8 col-xs-12 left-item-car">
+                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 nopadding">
+                        <div class="row nopadding row-item">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 name-car">
+                            2014 BMW
+                            </div>
+                        </div>
+                        <div class="row nopadding row-item row-item-image-detail">
+                            <div class="col-lg-5 col-sm-5 col-md-5 col-xs-12 item-image-car">
+                                <img src="images/car/car-1.png" onclick="location.href='detailcar.html'">
+                            </div>
+                            <div class="col-lg-7 col-sm-7 col-md-7 col-xs-12 item-intro-car">
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                        Leather Seats, Sunroof(s), Front Seat Heaters, Cruise Control, Auxiliary Audio Input, Rear View Camera...
+                                <br>
+                                <span class="font-highlight">PRICE</span><br>
+                                <span class="price">400.000.000</span><span class="unit-money">VND</span><br>
+                                        
+                                <input type="button" class="btn-detail" value="Detail" onclick="location.href='detailcar.html'">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="row nopadding row-item row-item-image-detail main-info">
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 left-main-info">
+                                <table>
+                                    <tr>
+                                        <td>Miles</td>
+                                        <td class="right-text-td">47K</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Drive</td>
+                                        <td class="right-text-td">2WD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trans</td>
+                                        <td class="right-text-td">Automatic</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 right-main-info">
+                                <table>
+                                    <tr>
+                                        <td>MPG</td>
+                                        <td class="right-text-td">20/29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Exterior</td>
+                                        <td class="right-text-td">Black</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Interior</td>
+                                        <td class="right-text-td">Gray</td>
+                                    </tr>
+                                </table>
+                                
+                            </div>
+                        </div>
+                        
+                     </div> 
+                    
+                      
+                   
+                    
+                </div>
+                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 right-item-car">
+                    
+                        <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12 nopadding-item">
+                            <div class="row nopadding row-item-advance">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <span class="font-highlight">CURRENT LOCATION</span><br>
+                                        Ho Chi Minh City
+                                    </div>
+                            </div>
+                            <div class="row nopadding row-item-advance">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <span class="font-highlight">Rating</span><br>
+                                       <img src="images/icon/icon_rating.png">
+                                    </div>
+                            </div>
+                            <div class="row nopadding row-item-advance">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <table>
+                                            <tr>
+                                                <td><img src="images/icon/icon_guarantee.png" width="30"></td>
+                                                <td><span class="font-highlight">Guarantee</span><br>
+                                                     2 years
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                            </div>
+                            <!--<div class="row nopadding row-item-advance">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding"><span class="font-highlight">CONTACT</span></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <table>
+                                            <tr>
+                                                <td><img src="images/icon/icon_phone_company.png" width="30"></td>
+                                                <td><span class="font-highlight">Tel</span><br>
+                                                   08 3697 8895
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/icon/icon_mail_company.png" width="30"></td>
+                                                <td><span class="font-highlight">Email</span><br>
+                                                   info@locnhatviet.com.vn
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                            </div>-->
+                        </div>
+                    
+                        
+                   
+                </div>
+            </div>
+            <!--row 2 item car-->
+            <div class="row row-item-car new-row-item">
+                <div class="col-lg-8 col-sm-8 col-md-8 col-xs-12 left-item-car">
+                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 nopadding">
+                        <div class="row nopadding row-item">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 name-car">
+                            2014 BMW
+                            </div>
+                        </div>
+                        <div class="row nopadding row-item row-item-image-detail">
+                            <div class="col-lg-5 col-sm-5 col-md-5 col-xs-12 item-image-car">
+                                  <img src="images/car/car-1.png" onclick="location.href='detailcar.html'">
+                            </div>
+                            <div class="col-lg-7 col-sm-7 col-md-7 col-xs-12 item-intro-car">
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                        Leather Seats, Sunroof(s), Front Seat Heaters, Cruise Control, Auxiliary Audio Input, Rear View Camera...
+                                <br>
+                                <span class="font-highlight">PRICE</span><br>
+                                <span class="price">400.000.000</span><span class="unit-money">VND</span><br>
+                                        
+                                <input type="button" class="btn-detail" value="Detail" onclick="location.href='detailcar.html'">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="row nopadding row-item row-item-image-detail main-info">
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 left-main-info">
+                                <table>
+                                    <tr>
+                                        <td>Miles</td>
+                                        <td class="right-text-td">47K</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Drive</td>
+                                        <td class="right-text-td">2WD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trans</td>
+                                        <td class="right-text-td">Automatic</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 right-main-info">
+                                <table>
+                                    <tr>
+                                        <td>MPG</td>
+                                        <td class="right-text-td">20/29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Exterior</td>
+                                        <td class="right-text-td">Black</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Interior</td>
+                                        <td class="right-text-td">Gray</td>
+                                    </tr>
+                                </table>
+                                
+                            </div>
+                        </div>
+                        
+                     </div> 
+                    
+                      
+                   
+                    
+                </div>
+                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 right-item-car">
+                    
+                        <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12 nopadding-item">
+                            <div class="row nopadding row-item-advance">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <span class="font-highlight">CURRENT LOCATION</span><br>
+                                        Ho Chi Minh City
+                                    </div>
+                            </div>
+                            <div class="row nopadding row-item-advance">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <span class="font-highlight">Rating</span><br>
+                                       <img src="images/icon/icon_rating.png">
+                                    </div>
+                            </div>
+                            <div class="row nopadding row-item-advance">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <table>
+                                            <tr>
+                                                <td><img src="images/icon/icon_guarantee.png" width="30"></td>
+                                                <td><span class="font-highlight">Guarantee</span><br>
+                                                     2 years
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                            </div>
+                            <!--<div class="row nopadding row-item-advance">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding"><span class="font-highlight">CONTACT</span></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <table>
+                                            <tr>
+                                                <td><img src="images/icon/icon_phone_company.png" width="30"></td>
+                                                <td><span class="font-highlight">Tel</span><br>
+                                                   08 3697 8895
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/icon/icon_mail_company.png" width="30"></td>
+                                                <td><span class="font-highlight">Email</span><br>
+                                                   info@locnhatviet.com.vn
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                            </div>-->
+                        </div>
+                    
+                        
+                   
+                </div>
+            </div>
+            
+            <!--row 3 item car -->
+            <div class="row row-item-car new-row-item">
+                <div class="col-lg-8 col-sm-8 col-md-8 col-xs-12 left-item-car">
+                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 nopadding">
+                        <div class="row nopadding row-item">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 name-car">
+                            2014 BMW
+                            </div>
+                        </div>
+                        <div class="row nopadding row-item row-item-image-detail">
+                            <div class="col-lg-5 col-sm-5 col-md-5 col-xs-12 item-image-car">
+                                  <img src="images/car/car-1.png" onclick="location.href='detailcar.html'">
+                            </div>
+                            <div class="col-lg-7 col-sm-7 col-md-7 col-xs-12 item-intro-car">
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                        Leather Seats, Sunroof(s), Front Seat Heaters, Cruise Control, Auxiliary Audio Input, Rear View Camera...
+                                <br>
+                                <span class="font-highlight">PRICE</span><br>
+                                <span class="price">400.000.000</span><span class="unit-money">VND</span><br>
+                                        
+                                <input type="button" class="btn-detail" value="Detail" onclick="location.href='detailcar.html'">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="row nopadding row-item row-item-image-detail main-info">
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 left-main-info">
+                                <table>
+                                    <tr>
+                                        <td>Miles</td>
+                                        <td class="right-text-td">47K</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Drive</td>
+                                        <td class="right-text-td">2WD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trans</td>
+                                        <td class="right-text-td">Automatic</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 right-main-info">
+                                <table>
+                                    <tr>
+                                        <td>MPG</td>
+                                        <td class="right-text-td">20/29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Exterior</td>
+                                        <td class="right-text-td">Black</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Interior</td>
+                                        <td class="right-text-td">Gray</td>
+                                    </tr>
+                                </table>
+                                
+                            </div>
+                        </div>
+                        
+                     </div> 
+                    
+                      
+                   
+                    
+                </div>
+                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 right-item-car">
+                    
+                        <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12 nopadding-item">
+                            <div class="row nopadding row-item-advance">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <span class="font-highlight">CURRENT LOCATION</span><br>
+                                        Ho Chi Minh City
+                                    </div>
+                            </div>
+                            <div class="row nopadding row-item-advance">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <span class="font-highlight">Rating</span><br>
+                                       <img src="images/icon/icon_rating.png">
+                                    </div>
+                            </div>
+                            <div class="row nopadding row-item-advance">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <table>
+                                            <tr>
+                                                <td><img src="images/icon/icon_guarantee.png" width="30"></td>
+                                                <td><span class="font-highlight">Guarantee</span><br>
+                                                     2 years
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                            </div>
+                            <!--<div class="row nopadding row-item-advance">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding"><span class="font-highlight">CONTACT</span></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <table>
+                                            <tr>
+                                                <td><img src="images/icon/icon_phone_company.png" width="30"></td>
+                                                <td><span class="font-highlight">Tel</span><br>
+                                                   08 3697 8895
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/icon/icon_mail_company.png" width="30"></td>
+                                                <td><span class="font-highlight">Email</span><br>
+                                                   info@locnhatviet.com.vn
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                            </div>-->
+                        </div>
+                    
+                        
+                   
+                </div>
+            </div>
+            <!-- row 4 item car -->
+            <div class="row row-item-car new-row-item">
+                <div class="col-lg-8 col-sm-8 col-md-8 col-xs-12 left-item-car">
+                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 nopadding">
+                        <div class="row nopadding row-item">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 name-car">
+                            2014 BMW
+                            </div>
+                        </div>
+                        <div class="row nopadding row-item row-item-image-detail">
+                            <div class="col-lg-5 col-sm-5 col-md-5 col-xs-12 item-image-car">
+                                  <img src="images/car/car-1.png" onclick="location.href='detailcar.html'">
+                            </div>
+                            <div class="col-lg-7 col-sm-7 col-md-7 col-xs-12 item-intro-car">
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                                        Leather Seats, Sunroof(s), Front Seat Heaters, Cruise Control, Auxiliary Audio Input, Rear View Camera...
+                                <br>
+                                <span class="font-highlight">PRICE</span><br>
+                                <span class="price">400.000.000</span><span class="unit-money">VND</span><br>
+                                        
+                                <input type="button" class="btn-detail" value="Detail" onclick="location.href='detailcar.html'">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="row nopadding row-item row-item-image-detail main-info">
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 left-main-info">
+                                <table>
+                                    <tr>
+                                        <td>Miles</td>
+                                        <td class="right-text-td">47K</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Drive</td>
+                                        <td class="right-text-td">2WD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trans</td>
+                                        <td class="right-text-td">Automatic</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 right-main-info">
+                                <table>
+                                    <tr>
+                                        <td>MPG</td>
+                                        <td class="right-text-td">20/29</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Exterior</td>
+                                        <td class="right-text-td">Black</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Interior</td>
+                                        <td class="right-text-td">Gray</td>
+                                    </tr>
+                                </table>
+                                
+                            </div>
+                        </div>
+                        
+                     </div> 
+                    
+                      
+                   
+                    
+                </div>
+                <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 right-item-car">
+                    
+                        <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12 nopadding-item">
+                            <div class="row nopadding row-item-advance">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <span class="font-highlight">CURRENT LOCATION</span><br>
+                                        Ho Chi Minh City
+                                    </div>
+                            </div>
+                            <div class="row nopadding row-item-advance">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <span class="font-highlight">Rating</span><br>
+                                       <img src="images/icon/icon_rating.png">
+                                    </div>
+                            </div>
+                            <div class="row nopadding row-item-advance">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <table>
+                                            <tr>
+                                                <td><img src="images/icon/icon_guarantee.png" width="30"></td>
+                                                <td><span class="font-highlight">Guarantee</span><br>
+                                                     2 years
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                            </div>
+                            <!--<div class="row nopadding row-item-advance">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding"><span class="font-highlight">CONTACT</span></div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                        <table>
+                                            <tr>
+                                                <td><img src="images/icon/icon_phone_company.png" width="30"></td>
+                                                <td><span class="font-highlight">Tel</span><br>
+                                                   08 3697 8895
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/icon/icon_mail_company.png" width="30"></td>
+                                                <td><span class="font-highlight">Email</span><br>
+                                                   info@locnhatviet.com.vn
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                            </div>-->
+                        </div>
+                    
+                        
+                   
+                </div>
+            </div>
+        </div>
+       
+        </div>    
+        
+    </div>
+    </div>
+    <footer class="footer-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-news">
+                    <label>CAR REVIEWS & NEWS</label>
+                    <table class="table-footer-news">
+                        <tbody>
+                            <tr>
+                                <td class="image-footer-news">
+                                    <img src="images/news/news-1.png">
+                                </td>
+                                <td class="text-footer-news">
+                                <label class="title-news">Lorem Ipsum is simply</label> Dummy text of the printing and typesetting industry.                                     Lorem Ipsum has been the industry's standard... 
+                                    <br>
+                                 <div class="right-button-detail-new">   <input type="button" value="Detail" class="btn-detail-new"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-ads">
+                    <img src="images/ads/ads-1.png">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-links">
+                    <ul class="footer-link">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="comingsoon_waranty_service.html">WARANTY SERVICE</a></li>
+                        <li><a href="comingsoon_terms_of_service.html">TERMS OF SERVICE</a></li>
+                        <li><a href="contactus.html">CONTACT</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="comingsoon_privacy_statement.html">PRIVACY STATEMENT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <span class="footer-copyright">Copyright &copy; 2014 <span class="footer-span-company-name">Loc Nhat Viet Co.,Ltd.</span> All Rights Reserved</span>
+        </div>
+    </footer>
+   
+     <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/gm-common.js"></script>
+<!--     <script src="js/script.min.js"></script>-->
+  </body>
+</html>

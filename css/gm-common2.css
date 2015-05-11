@@ -1,0 +1,475 @@
+@charset "utf-8";
+
+/* ========================================
+* File Name   : common.css
+* Created Date: 2014.11.22
+* Last Up Date: 
+* Author      : GirlsMania
+======================================== */
+
+
+/* ========================================
+	body
+======================================== */
+
+body {														/* Boot Strap Custom */
+	font-family						: "メイリオ", Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'モリサワ 新ゴ R', 'Droid Sans', 'sans-serif';
+	background-color				: #ede7e5;
+	font-size						: 1.5em;
+}
+body .container {
+	width							: 100%;
+}
+
+
+
+/* ========================================
+	header
+======================================== */
+
+header {
+	height							: auto;
+	padding							: 10px 0;
+	background-color				: #154c96;
+}
+#header-home p {
+	margin-top						: 10px;
+	float							: left;
+}
+#header-home p span {
+	display							: block;
+    width							: 280px;
+    height							: 40px;
+	background						: url("../images/logo.png") top left;
+}
+#header-tool {
+	margin-top						: 5px;
+	padding-left					: 8px;
+}
+#header-tool span {
+	font-size						: 1.9em;
+	margin-left						: 5px;
+}
+#header-tool .glyphicon {										/* Boot Strap Custom */
+	color							: #fff;
+	filter							: alpha(opacity=70);
+	-ms-filter						: "alpha( opacity=70 )";
+	-moz-opacity					: 0.7;
+	opacity							: 0.7;
+}
+#header-tool a:hover .glyphicon,
+#header-tool a:active .glyphicon {										/* Boot Strap Custom */
+	color							: #fff;
+	filter							: alpha(opacity=100);
+	-ms-filter						: "alpha( opacity=100 )";
+	-moz-opacity					: 1;
+	opacity							: 1;
+}
+#header-search {
+	text-align						: right;
+	font-size						: 1.1em;
+}
+#header-user {
+	padding-left					: 0;
+	background-color				: #6e6a69;
+    font-size						: 1.0em;
+}
+#header-user #users_photo {
+	float							: left;
+}
+#header-user #header-user-name {
+	padding-top						: 5px;
+    padding-left					: 66px;
+    color							: #fff;
+    margin-bottom					: 2px;
+	line-height						: 120%;
+}
+#header-user #header-user-name a,
+#header-user #header-user-name a:visited {
+    color							: #fff;
+	font-size						: 1.0em;
+}
+#header-user #header-user-name a:hover,
+#header-user #header-user-name a:active {
+    color							: #fff;
+	font-size						: 1.0em;
+    text-decoration					: underline;
+}
+#header-user #header-user-name span {
+    color							: #ddd;
+}
+#header-user #header-user-university {
+    margin-bottom					: 0;
+    padding-left					: 66px;
+    color							: #ddd;
+}
+
+@media screen and (max-width: 767px) {
+    #header-home {
+        padding-left				: 5px;
+    }
+    #header-search {
+        padding-right				: 0;
+    font-size						: 1.1em;
+    }
+
+    #header-user {
+        margin-top					: 10px;
+    }
+}
+#page-top span {
+    color: #aaa;
+    font-size: 5em;
+}
+
+/* ========================================
+	navigation
+======================================== */
+
+.navbar {													/* Boot Strap Custom */
+	border-radius					: 0;
+	border							: 0;
+}
+.navbar-default {											/* Boot Strap Custom */
+	background-color				: #afaba9;
+	color							: #fff;
+}
+
+.navbar-default .navbar-nav li {
+	text-align						: center;
+}
+.navbar-default .navbar-nav li a {							/* Boot Strap Custom */
+	width							: 120px;
+	height							: 100px;
+}
+.navbar-default .navbar-nav li.active a {					/* Boot Strap Custom */
+	background-color				: #3d74be;
+}
+.navbar-default .navbar-nav li a,
+.navbar-default .navbar-nav li a:visited {					/* Boot Strap Custom */
+	color							: #fff;
+}
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:active {					/* Boot Strap Custom */
+	color							: #fff;
+	text-decoration					: underline;
+	background-color				: #154c96;
+}
+.navbar-default .navbar-nav li a span {						/* Boot Strap Custom */
+	display							: block;
+	margin-top						: 5px;
+}
+
+.navbar-default .navbar-nav li#nav-other .dropdown-menu {
+	margin-top						: 0px;
+	padding							: 0px;
+	width							: 250px;
+	background-color				: #3d74be;
+	text-align						: left;
+}
+
+.navbar-default .navbar-nav li#nav-other a:visited{
+background-color:#154c96;
+color: #fff;
+
+}
+
+.navbar-default .navbar-nav li#nav-other .dropdown-menu a {
+	color							: #fff;
+	height							: 50px;
+	width							: 248px;
+	text-align						: left;
+	padding-top						: 15px;
+}
+.navbar-default .navbar-nav li#nav-other .dropdown-menu a:hover,
+.navbar-default .navbar-nav li#nav-other .dropdown-menu a:active,{
+	color							: #fff;
+	width							: 248px;
+	text-decoration					: underline;
+}
+.navbar-default .navbar-nav li#nav-other .otherlist {
+	height							: 50px;
+}
+
+
+@media screen and (max-width: 991px) {
+	.navbar-default .navbar-nav li a {						/* Boot Strap Custom */
+		width						: 110px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.navbar-default .navbar-nav {
+		width						: auto;
+		margin-bottom				: 0;
+	}
+	.navbar-default .navbar-nav li {
+		border-bottom				: 1px solid #fff;
+	}
+	.navbar-default .navbar-right {
+		margin-top					: 0;
+	}
+	.navbar-default .navbar-nav li a {						/* Boot Strap Custom */
+		width						: auto;
+		height						: auto;
+	}
+	.navbar-default .navbar-nav li a span br {				/* Boot Strap Custom */
+		display						: none;
+	}
+	.navbar-default .navbar-nav li img {					/* Boot Strap Custom */
+		display						: none;
+	}
+	.navbar-default .navbar-nav li#nav-other .dropdown-menu {
+		width						: auto;
+	}
+	.navbar-default .navbar-nav li#nav-other .otherlist {
+		height						: auto;
+	}
+	.navbar-default .navbar-nav li#nav-other .dropdown-menu a {
+		height						: auto;
+		padding-top					: 10px;
+		padding-bottom				: 5px;
+	}
+}
+
+
+
+/* ========================================
+	contents
+======================================== */
+
+h1 {														/* Boot Strap Custom */
+	color							: #154c96;
+	font-size						: 2em;
+	margin-bottom					: 20px;
+}
+.caption {
+	font-size						: 0.9em;
+	font-weight						: 200;
+}
+.btn-success,
+.btn-success:hover {										/* Boot Strap Custom */
+	background-color				: #154c96;
+	border-color					: #154c96;
+	color							: #fff;
+}
+.opacity:hover,
+.opacity:active {											/* Boot Strap Custom */
+	filter							: alpha(opacity=70);
+	-ms-filter						: "alpha( opacity=70 )";
+	-moz-opacity					: 0.7;
+	opacity							: 0.7;
+
+}
+
+.btn-white,
+.btn-white:hover {										/* Boot Strap Custom */
+    background-color				: #fff;
+    border-color					: #fff;
+    color							: #566575 !important;;
+}
+
+.icon-necessary-basic{
+	background-color: #154c96;
+	color: #fff;
+	padding:5px;
+	margin-right: 3px;
+	font-size: 12px;
+}
+
+a,
+a:visited {													/* Boot Strap Custom */
+	color							: #154c96;
+}
+a:hover,
+a:active {													/* Boot Strap Custom */
+	color							: #154c96;
+}
+span.glyphicon {											/* Boot Strap Custom */
+	font-size						: 13pt;/*オリジナルは10pt*/
+	color							: #154c96;
+}
+a span.glyphicon,
+a:visited span.glyphicon {									/* Boot Strap Custom */
+	color							: #154c96;
+}
+a:hover span.glyphicon,
+a:active span.glyphicon {									/* Boot Strap Custom */
+	color							: #154c96;
+}
+.disabled a span.glyphicon {
+	color							: #777;
+}
+select {
+	cursor							: pointer;
+}
+.form-control {
+	display							: inline;
+        /*display							: block;
+	width							: 200px;*/
+	height							: 34px;
+	padding							: 6px 5px;
+	font-size						: 80%;
+	line-height						: 1.42857;
+	color							: #555;
+	background-color				: #ede7e5;
+	background-image				: none;
+	border-bottom-style				: none;
+	box-shadow						: 1px 0px 1px rgba(0, 0, 0, 0.075) inset;
+	border-radius					: 0px;
+	transition						: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+
+}
+
+.itemlist-on:hover {
+	background-color				: #fbd0be;
+	cursor							: pointer;
+}
+
+a.btn-back{
+background-color: #afaba9;
+border-color: #afaba9;
+color:#fff;
+		}
+.btn-back:hover,.btn-back:active{
+background-color: #fff;
+border-color: #154c96;
+color: #154c96;
+		}
+
+.btn-confirmation{
+background-color: #154c96;
+border-color: #154c96;
+color: #fff;
+padding-left: 25px;
+padding-right: 25px;
+
+}
+
+.btn-confirmation:hover{
+color: #fff;
+
+}
+
+.fixed {
+	position						: fixed;
+	top								: 0;
+	width							: 100%;
+	z-index							: 10000;
+}
+
+#main-contents{font-size:1.2em;}
+#main-contents .nav-tabs li {
+	margin-top						: 10px;
+}
+#main-contents .nav-tabs li a {
+	margin-right					: 6px;
+	color							: #fff;
+	background-color				: #ccc;
+	border-bottom					: 1px solid #154c96;
+}
+#main-contents .nav-tabs li.active a {						/* Boot Strap Custom */
+	background-color				: #3590b9;
+}
+#main-contents .nav-tabs li a:hover,
+#main-contents .nav-tabs li a:active {						/* Boot Strap Custom */
+	background-color				: #154c96;
+}
+#main-contents #myTabContent {
+	background-color				: #fff;
+	margin-bottom: 30px;
+}
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus{
+	background-color				: #3590b9;
+	border-color					: #3590b9;
+}
+
+.badge{
+background-color: #154c96;
+color:#fff;
+
+}
+
+.nav-tabs li a{
+border-radius:0;
+
+}
+
+.btn{
+    
+	border-radius:0;
+
+}
+
+.well{
+		border-radius:0;
+
+}
+
+@media screen and (min-width: 768px) {
+	section#main-contents {
+		padding						: 0 30px;
+	}
+
+}
+
+p{
+	word-wrap						: break-word;
+}
+
+/* alert */
+#freeAlert {
+	position: fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	z-index:1000;
+	display:none;
+}
+
+
+/* ========================================
+	footer
+======================================== */
+
+footer {
+	height							: 2.5em;
+	margin							: 0;
+	background-color				: #6e6a69;
+	color							: #b4b4b5;
+	text-align						: center;
+	border-top						: 2px solid #154c96;
+}
+footer #footer-copyright p {
+	font-size						: 0.8em;
+	margin-top						: 7px;
+}
+
+
+/* ========================================
+	pankuzu carousel
+======================================== */
+.navbar{margin-bottom:0;}
+.pankuzu{text-align:left;padding:0 0 20px 0;float:left;color:#8f8b89;font-size:14px;}
+.pankuzu a{color:#8f8b89;}
+.pankuzu-xs{float:left;padding:15px 0 0 0;font-size:14px;}
+.pankuzu-xs a{color:#ffffff;}
+.carousel{margin:10px -8px 0 0;width:468px;height:80px;}
+.carousel-inner .item{width:468px;height:80px;padding:8px 40px 0 40px;overflow:hidden;background-color:#ffffff;color:#666666;}
+.carousel-control{width:30px;}
+.carousel-control .glyphicon{font-size:14px;padding-top:8px;}
+.carousel-control.left{
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, .0001) 100%);
+	background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, .0001) 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .2)), to(rgba(0, 0, 0, .0001)));
+	background-image:         linear-gradient(to right, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, .0001) 100%);
+}
+.carousel-control.right {
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .2) 100%);
+	background-image:      -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .2) 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .2)));
+	background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .2) 100%);
+}
+.carousel-indicators{top:80px;}

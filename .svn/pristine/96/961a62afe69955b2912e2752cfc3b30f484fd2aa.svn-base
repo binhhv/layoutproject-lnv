@@ -1,0 +1,115 @@
+.header-admin-logo{
+    height: 80px;
+    background-color: white;
+    
+}
+
+.header-admin-logo .logo-company{
+    margin-left: 20px;
+    height: 80px;
+    width: 100px;
+    display: table-cell;
+
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+}
+.header-admin-logo .admin-account{
+      height: 80px;
+    width: 250px;
+    display: table-cell;
+    float: right;
+    vertical-align: middle;
+    text-align: right;
+   
+}
+.admin-account div{
+    margin: 0 auto;
+    height: 60px;
+    margin-top: 10px;
+    line-height: 60px;
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+}
+.admin-account div img{
+    height: 40px;
+    width: 40px;
+    max-height: 100%;
+    max-width: 100%;
+}
+.admin-account div.spilit-div{
+    width: 1px;
+    border-left: 1px solid #ccc;
+}
+.avatar-admin{
+    width: 60px;
+    height: 60px;
+    background:  url(../../images/background/background_avatar_seller.png) no-repeat center center;  
+}
+.logo-company img{
+    height: 70px;
+    max-height: 100%;
+    max-width: 100%;
+}
+#crumb-admin{
+  background-color: transparent;
+  background-image: none;
+  padding: 15px 15px;
+  font-family: fontAwesome;
+    text-align: left;
+}
+#crumb-admin li{
+    float: left;
+    padding: 0 0 0 5px;
+    list-style: outside none none;
+    color: white;
+    font-weight: bold;
+}
+#crumb-admin li a{
+    background:  url(../../images/icon/icon_arrow_link.png) no-repeat right center;
+      /* line-height: 2.2em; */
+     padding: 0 12px 0 0;
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+  
+}
+/*REPONSIVE SETUP*/
+@media screen and (max-width: 767px) {
+    
+
+}
+
+@media only screen and (max-width: 520px) and (min-width: 480px)
+{
+     
+   
+}
+
+
+@media only screen and (max-width: 479px) and (min-width: 320px)
+{
+   .header-admin-logo{
+    height: 160px;
+    background-color: white;
+    
+}
+    .header-admin-logo .admin-account
+    {
+        float: left;
+    }
+
+}
+
+@media screen and (max-width:320px){
+         
+}
+@media screen and (min-width: 768px) {
+    
+   
+      
+}
+@media screen and (min-width: 991px) {
+    
+}

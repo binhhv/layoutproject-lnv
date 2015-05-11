@@ -1,0 +1,69 @@
+.register-input {
+  height: 25px;
+  width: 95%;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+.register-content{
+     padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.register-submit {
+    margin-top: 15px;
+  height: 25px;
+  padding: 5px 10px 5px 10px;
+}
+.image-register img{
+    display: block;
+  max-width: 100%;
+  height: 250px;
+  margin: auto;
+}
+#register-dialog{
+    padding-left: 15px;
+}
+.label-item-search {
+  color: #626262;
+  font-weight: normal;
+}
+input[type="radio"],input[type="checkbox"]{
+  margin-top: -2px;
+  vertical-align: middle;
+}
+/*REPONSIVE SETUP*/
+@media screen and (max-width: 767px) {
+    
+    .item-auction
+    {display:inline-block;
+         padding-right: 0 !important;
+    }
+    .name-item-auction
+    {
+           border: 1px solid #e8e7e7;
+    }
+}
+
+@media only screen and (max-width: 520px) and (min-width: 480px)
+{
+     
+   
+}
+
+
+@media only screen and (max-width: 479px) and (min-width: 320px)
+{
+   
+
+}
+
+@media screen and (max-width:320px){
+         
+}
+@media screen and (min-width: 768px) {
+    
+   
+      
+}
+@media screen and (min-width: 991px) {
+    
+}

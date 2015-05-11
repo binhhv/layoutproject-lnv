@@ -1,0 +1,166 @@
+.content{
+    min-height: 500px;
+}
+.form-group-faq > label{
+    text-align: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.form-group-faq input[type="text"],select{
+    text-align: left;
+    width: 100%;
+    
+}
+.form-group-faq input[type="text"],select{
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 5px;
+}
+.form-group-faq input[type="submit"]{
+  border-radius: 20px;
+  font-size: 12px;
+  padding:  5px;
+  text-align: left;
+  width: 80px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 20px;  
+  height: 30px;
+
+}
+.form-group-faq input[type="button"]{
+      border: 2px solid #FFFFFF;
+      border-radius: 20px;
+      font-size: 12px;
+      padding: 5px 5px 5px 50px;
+      background-color: #f3f6f9;
+      border: 1px solid white;
+      text-align: left;
+      width: 100%;
+      text-align: center;
+      color: #007d9d;
+      font-weight: bold;
+      text-align: left;  
+      line-height: 20px;  
+      height: 30px;
+}
+.form-group-faq select{
+   
+		-webkit-appearance: none;  /*Removes default chrome and safari style*/
+		-moz-appearance: none; /* Removes Default Firefox style*/
+		background: #0088ab url(../images/select-arrow.png) no-repeat 98% center;
+}
+.form-group-faq select.small-select{
+		background: #0088ab url(../images/select-arrow.png) no-repeat 95% center;
+}
+.form-group-faq p{
+    width: 2%;
+    float: left;
+}
+.faq-left{
+    text-align: left;
+}
+.send-faq{
+    margin-top: 10px !important;
+}
+.panel-heading{
+        height: 50px;
+
+    font-size: 20px;
+    font-weight: bold;
+    background: #fafafa url(../images/icon/icon_faq.png) no-repeat 1% center;
+    padding: 0 0 0 50px;
+    margin: 0;
+   
+}
+.panel-heading .panel-title{
+        color:#256730;
+    line-height: 50px;
+}
+/*
+.panel-heading .panel-title a .container{
+     background: url(../images/icon/icon_plus.png) no-repeat 98% center;
+}
+*/
+/*
+.panel-heading .panel-title a.accordion-toggle .container{
+ background: url(../images/icon/icon_minus.png) no-repeat 98% center;
+}
+*/
+/*
+.panel-heading .panel-title a.accordion-toggle.collapsed .container{
+ background: url(../images/icon/icon_minus.png) no-repeat 98% center;
+}
+*/
+.expand-panel{
+     background: url(../images/icon/icon_plus.png) no-repeat 98% center;
+}
+.collapsed-panel{
+ background: url(../images/icon/icon_minus.png) no-repeat 98% center;
+}
+/*
+#accordion h3{
+    height: 50px;
+    line-height: 50px;
+    color:#007d9d;
+    font-size: 20px;
+    font-weight: bold;
+    background: #fafafa url(../images/icon/icon_faq.png) no-repeat 1% center;
+    padding: 0 0 0 50px;
+    margin: 0;
+    border: 1px solid #ccc;
+}
+
+#accordion div{
+    border: 1px solid #ccc;
+    border-top: none;
+    margin-bottom: 5px;
+    background: #fafafa;
+    padding: 5px;
+}
+*/
+/*
+.clickable
+{
+    cursor: pointer;
+}
+
+.clickable .glyphicon
+{
+    background: rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px
+}
+
+.panel-heading span
+{
+    margin-top: -23px;
+    font-size: 15px;
+    margin-right: -9px;
+}
+a.clickable { color: inherit; }
+a.clickable:hover { text-decoration:none; }
+*/
+
+/*
+#table-faq { border-collapse:collapse;}
+        #table-faq h4 { margin:0px; padding:0px;}
+        #table-faq img { float:right;}
+        #table-faq ul { margin:10px 0 10px 40px; padding:0px;}
+        #table-faq tr{background: #fafafa url(../images/icon/icon_faq.png) no-repeat 1% center;}
+        #table-faq th { background:#fafafa; color:#fff; padding:7px 15px; text-align:left;}
+        #table-faq td { background:#fafafa; color:#007d9d; padding:7px 15px; width: 100%; height: 50px;}
+        #table-faq tr.even td { background:#fafafa; cursor:pointer; }
+        #table-faq div.arrow { background:transparent url(../images/icon/arrows.png) no-repeat scroll 0px -16px; width:16px; height:16px; display:block;}
+        #table-faq div.up { background-position:0px 0px;}*/
+/*
+.panel-heading a:after {
+    font-family:'Glyphicons Halflings';
+    content:"\e114";
+    float: right;
+    color: grey;
+}
+.panel-heading a.collapsed:after {
+    content:"\e080";
+}*/
